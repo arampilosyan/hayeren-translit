@@ -1,0 +1,17 @@
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1b1e2b;--dim:#68708a;--accent:#5b3df5;--line:#dcdfeb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1119;--card:#181b27;--fg:#e8ebf7;--dim:#98a0bd;--accent:#8c7bff;--line:#2a2f45}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 system-ui,"Noto Sans Armenian",sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem}
+h1{margin:.2em 0}
+p.sub{color:var(--dim);margin-top:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+textarea{width:100%;min-height:200px;padding:.8rem;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font:inherit;resize:vertical}
+label.t{display:block;font-size:.85rem;color:var(--dim);margin-bottom:.3rem}
+.bar{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin:1rem 0}
+button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:.5rem 1rem;font:inherit;cursor:pointer}
+details{margin-top:1.5rem;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem}
+.map{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+.map span{border:1px solid var(--line);border-radius:6px;padding:.1rem .5rem}
+.map b{color:var(--accent)}

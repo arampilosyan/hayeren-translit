@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="hy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Հայերեն տառադարձիչ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Հայերեն տառադարձիչ</h1>
+  <p class="sub">Գրիր լատինատառ՝ ստացիր հայատառ։ Օրինակ՝ <code>hayeren</code> → հայերեն</p>
+  <div class="grid">
+    <div><label class="t" for="src">Լատինատառ</label><textarea id="src" placeholder="barev dzez, inchpes eq?"></textarea></div>
+    <div><label class="t" for="dst">Հայատառ</label><textarea id="dst" readonly></textarea></div>
+  </div>
+  <div class="bar">
+    <button id="copy">Պատճենել</button>
+    <label><input type="checkbox" id="period" checked> Վերջակետը՝ «։»</label>
+    <span id="msg" class="sub"></span>
+  </div>
+  <details><summary>Տառերի աղյուսակ</summary><div class="map" id="map"></div></details>
+</main>
+<script src="js/translit.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "hayeren-translit",
+  "version": "1.0.0",
+  "description": "Լատինատառ -> հայատառ տառադարձիչ (վեբ + Node)",
+  "main": "js/translit.js",
+  "scripts": { "test": "node test/translit.test.js" },
+  "license": "MIT"
+}
